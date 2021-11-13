@@ -19,15 +19,31 @@ ul{
     .mainbutton{
     background-color: black;
     color: white;
+    }
+
+.button {
     border: 0px;
     padding: 5px 10px;
     border-radius: 10px;
     font-weight: bolder;
-    box-shadow: 3px 3px pink;
+}
+
+.mainbutton{
+    background-color: black;
+    color: white;
 }
 
 .mainbutton:hover{
     cursor: pointer;
     box-shadow: 5px 5px pink;
     transform: scale(1.3);
+}
+
+.secondarybutton{
+    background-color: blue;
+    color: white;
+}
+
+.mainbutton:hover{
+    box-shadow: 5px 5px pink;
 }
