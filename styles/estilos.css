@@ -9,7 +9,7 @@ ul{
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding: 0px;
+    padding: 10px;
     margin: 0px;
 }
 
