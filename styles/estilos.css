@@ -16,3 +16,18 @@ ul{
 .logo{
     height: 70px;
 }
+    .mainbutton{
+    background-color: black;
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 3px 3px pink;
+}
+
+.mainbutton:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px pink;
+    transform: scale(1.3);
+}
