@@ -1,17 +1,15 @@
-import logo from './logo.svg';
-import './styles/styles.css';
-import motologo from './media/motologo2.png';
-import gixxer from './media/gixxer.jpg';
-import honda from './media/sddefault.jpg';
+import CardTiposMotos from "components/CardTiposMotos";
+import motologo from 'media/motologo2.png';
+import gixxer from 'media/gixxer.jpg';
+import honda from 'media/sddefault.jpg';
 
-
-function App() {
-  return (
-    <div className="App">
-
-
+function Index(){
+    return(
+        <div>
     <header>
+    <div>hola mundo este es el div</div>
         <ul className="navbar">
+            
             <li >
                 <img src={motologo} alt="iamgen" className="logo"/>
             </li>
@@ -38,30 +36,19 @@ function App() {
     <section>
         <h1>Tipos de Motos</h1>
         <ul className="breedcardcontainer">
-            <li className="breedcard">
-                <div className="contenedorimagen">
-                    <img src={gixxer} alt="moto honda"/>
-            
-                </div>
-                <span className="breedtittle">Foto Gixxer</span>
-            </li>
-
-            <li className="breedcard">
-                <div className="contenedorimagen">
-                    <img src={honda} alt="moto honda"/>
-            
-                </div>
-                <span className="breedtittle">Foto Honda</span>
-            </li>
-            
+            <CardTiposMotos nombreMoto="Honda" imagen={honda} />
+            <CardTiposMotos nombreMoto="Susuki" imagen={gixxer} />
+            <CardTiposMotos nombreMoto="Susuki" imagen={gixxer}/>
+            <CardTiposMotos nombreMoto="Susuki" imagen={gixxer}/>
+            <CardTiposMotos nombreMoto="Susuki" imagen={gixxer}/>
+            <CardTiposMotos nombreMoto="Susuki" imagen={gixxer}/>
         </ul>
     </section>
-    <footer></footer>
+    <footer>
 
-
-
-    </div>
-  );
+    </footer>            
+        </div>
+    )
 }
 
-export default App;
+export default Index;
