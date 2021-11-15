@@ -1,8 +1,11 @@
-function hondapage(){
-    return(
-        <div>Esta es la pagina de la honda</div>
-    )
+import React from 'react'
 
+const Hondapage = () => {
+  return (
+    <div>
+      Informaion sobre honda
+    </div>
+  )
 }
 
-export default hondapage;
+export default Hondapage;
